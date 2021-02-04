@@ -27,6 +27,7 @@ MQTT_TOPIC = os.environ['MQTT_TOPIC']
 DISCOVERY_PREFIX = os.environ['DISCOVERY_PREFIX']
 DISCOVERY_INTERVAL = os.environ['DISCOVERY_INTERVAL']
 DEBUG = os.environ['DEBUG']
+EXPIREAFTER = os.environ['EXPIREAFTER'] 
 
 # Convert number environment variables to int
 MQTT_PORT = int(MQTT_PORT)
@@ -435,7 +436,8 @@ def publish_config(mqttc, topic, model, instance, channel, mapping):
     config["state_topic"] = "/".join([MQTT_TOPIC, model, instance, channel, topic])
     config["name"] = " ".join([model.replace("-", " "), instance, object_suffix])
     config["unique_id"] = "".join(["rtl433", device_type, instance, object_suffix])
-    config["availability_topic"] = "/".join([MQTT_TOPIC, "status"])
+    # config["availability_topic"] = "/".join([MQTT_TOPIC, "status"])
+    config["expire_after"] = EXPIREAFTER
 
     # add Home Assistant device info
 
