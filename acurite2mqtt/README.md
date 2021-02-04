@@ -6,7 +6,7 @@ A Home Assistant addon for a software defined radio tuned to listen for 433MHz R
 
 Add the repository URL under **Supervisor → Add-on store → ⋮ → Manage add-on repositories**:
 
-    https://github.com/thejeffreystone/hassio-addons
+    https://github.com/pessorrusso/hassio
 
 Then search for `Accurite to home Assistant` and install it.
 
@@ -24,6 +24,7 @@ protocol: '-R 11 -R 40 -R 41 -R 55 -R 74'
 discovery_prefix: homeassistant
 discovery_interval: 600
 debug: false
+expirationafter: 90
 ```
 
 ### Option: `mqtt_host`
