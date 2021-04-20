@@ -1,3 +1,7 @@
+## [0.4.2]
+### Changed
+- Adding Exit code to entry script.
+
 ## [0.4.1]
 ### Changed
 - USB
