@@ -21,6 +21,8 @@ mqtt_password: mqtt_pass
 mqtt_topic: rtl_433
 mqtt_retain: 'true'
 protocol: '-R 11 -R 40 -R 41 -R 55 -R 74'
+whitelist_enable: true
+whitelist: 2169 6417
 discovery_prefix: homeassistant
 discovery_interval: 600
 debug: false
