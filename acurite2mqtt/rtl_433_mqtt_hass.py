@@ -474,7 +474,7 @@ def bridge_event_to_hass(mqttc, topic, data):
         return
 
     if (WHITELIST_ENABLE == 'true') and (instance not in whitelist_list):
-        #not authorized device
+        # not authorized device
         if DEBUG == 'true':
             print("Device Id:{} not in whitelist".format(instance))
         return
