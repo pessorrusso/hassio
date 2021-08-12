@@ -1,3 +1,6 @@
+## [0.4.3]
+- SAM:Adding whitelist
+
 ## [0.4.2]
 ### Changed
 - Adding Exit code to entry script.
